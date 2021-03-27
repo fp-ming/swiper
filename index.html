@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>图片无缝轮播</title>
+ 	<link rel="stylesheet" href="style.css"> 
+ </head>
+<body>
+	<div id="swiper" class="swiper"  autoPlay="true">
+		<!-- 图片 --> 
+		<div class="pic">
+			<ul>
+				<li><a href="#"><img src="img/1.jpg" alt="无图"></a></li>
+				<li><a href="#"><img src="img/2.jpg" alt="无图"></a></li>
+				<li><a href="#"><img src="img/3.jpg" alt="无图"></a></li>
+				<li><a href="#"><img src="img/4.jpg" alt="无图"></a></li>
+			</ul>
+		</div>
+		<div class="dots">
+			<ul></ul>
+		</div>
+		<div class="btn prev">&lt;</div>
+		<div class="btn next">&gt;</div>
+	</div>
+	<script type="text/javascript" src="jq/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="rotation.js"></script>
+	<script>
+		new picRotaion("#swiper");
+	</script>
+</body>
+</html>
